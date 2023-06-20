@@ -1,4 +1,4 @@
-@media screen and (min-width: 769px) {
+@media(min-width: 901px) {
     head,
     body {
         font-family: 'Caveat', cursive;
@@ -64,14 +64,14 @@
     }
     #SMBCO {
         background-color: whitesmoke;
-        border: 2PX dotted rgb(59, 17, 14);
+        border: 2PX dotted rgb(70, 107, 135);
         font-size: 42px;
         justify-content: center;
         width: fit-content;
         margin-left: 80px;
     }
     #bttl {
-        color: rgb(59, 17, 14);
+        color: rgb(70, 107, 135);
         background-color: whitesmoke;
         font-size: 22px;
         font-weight: bold;
@@ -83,6 +83,7 @@
         background-color: rgb(59, 17, 14);
         height: auto;
         color: whitesmoke;
+        justify-content: space-between;
     }
     img {
         border: 7px solid pink;
@@ -92,10 +93,26 @@
         margin: 15px;
     }
     #sociImg {
-        border: 2px dotted rgb(59, 17, 14);
+        border: 2px dotted rgb(70, 107, 135);
         background-color: whitesmoke;
         display: flexbox;
         flex-direction: column-reverse;
         margin-left: 50px;
+    }
+    .sidenote2 {
+        background: blue;
+        grid-area: sidenote;
+        border: 8px solid whitesmoke;
+        float: right;
+        padding: 5px;
+        margin: 2px;
+        font-size: 10px;
+        font-weight: bolder;
+        display: flexbox;
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+        margin-left: 188px;
+        padding: 50px;
     }
 }
