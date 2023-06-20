@@ -1,0 +1,101 @@
+@media screen ( max-width: 901px) and (min-width: 413px) {
+    head,
+    body {
+        font-family: 'Caveat', cursive;
+    }
+    #bigbox {
+        display: grid;
+        flex-direction: column-reverse;
+        grid-template-columns: minmax (min-content, 1300PX 4);
+        grid-template-rows: max-content max-content max-content max-content;
+        grid-template-areas: 'headertop headertop headertop headertop ' 'maininfo maininfo maininfo sidenote ' ' maininfo maininfo maininfo sidenote ' 'footer footer footer footer '
+    }
+    header {
+        border: 2px solid navajowhite;
+        background-color: navajowhite;
+        padding: 15px;
+        font: status-bar;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    li {
+        list-style: none;
+    }
+    #card1 {
+        border: solid 5px rgb(135, 64, 17);
+        height: 1px;
+        width: 1px;
+    }
+    .headertop {
+        margin-top: 10px;
+        grid-area: headertop;
+        background-color: white;
+        border: 8px solid navajowhite;
+        padding: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .maininfo {
+        float: left;
+        grid-area: maininfo;
+        background-color: white;
+    }
+    h2 {
+        flex-direction: row-reverse;
+        justify-content: center;
+        font: 72px;
+    }
+    .sidenote {
+        grid-area: sidenote;
+        border: 8px solid navajowhite;
+        background-image: url("socialMediaWordle.jpeg");
+        float: right;
+        padding: 5px;
+        margin: 2px;
+        font-size: 10px;
+        font-weight: bolder;
+        display: flexbox;
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+        margin-left: 188px;
+        padding: 50px;
+    }
+    #SMBCO {
+        background-color: navajowhite;
+        border: 2PX dotted rgb(160, 18, 97);
+        font-size: 42px;
+        justify-content: center;
+        width: fit-content;
+        margin-left: 80px;
+    }
+    #bttl {
+        color: rgb(59, 17, 14);
+        background-color: navajowhite;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .footer {
+        grid-area: footer;
+        padding: 10px;
+        border: solid navajowhite;
+        background-color: rgb(160, 18, 97);
+        height: auto;
+        color: navajowhite;
+    }
+    img {
+        border: 7px solid pink;
+        height: 50px;
+        width: 50px;
+        padding: 13px;
+        margin: 15px;
+    }
+    #sociImg {
+        border: 2px dotted rgb(160, 18, 97);
+        background-color: navajowhite;
+        display: flexbox;
+        flex-direction: column-reverse;
+        margin-left: 50px;
+    }
+}
