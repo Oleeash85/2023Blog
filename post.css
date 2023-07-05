@@ -13,7 +13,7 @@
         flex-direction: column-reverse;
         grid-template-columns: max-content;
         grid-template-rows: max-content max-content max-content max-content;
-        grid-template-areas: 'headertop headertop headertop headertop ' 'maininfo maininfo maininfo sidenote ' ' maininfo maininfo maininfo sidenote ' 'footer footer footer footer '
+        grid-template-areas: 'headertop headertop headertop headertop ''maininfo maininfo maininfo sidenote '' maininfo maininfo maininfo sidenote ''footer footer footer footer '
     }
     header {
         border: 2px solid whitesmoke;
