@@ -5,27 +5,24 @@
     }
     #bigbox {
         display: grid;
-        flex-direction: column-reverse;
+        font-size: 22px;
+        flex-direction: row;
         grid-template-columns: minmax (min-content, 1300PX 4);
         grid-template-rows: max-content max-content max-content max-content;
-        grid-template-areas: 'headertop headertop headertop headertop ' 'maininfo maininfo maininfo sidenote ' ' maininfo maininfo maininfo sidenote ' 'footer footer footer footer '
+        grid-template-areas: 'headertop headertop headertop headertop '' maininfo maininfo maininfo  sideMAININFOnote '' maininfo maininfo maininfo sidenote '' footer footer footer footer '
     }
     header {
         border: 2px solid whitesmoke;
-        background-color: whitesmoke;
+        background-color: rgb(33, 112, 215);
         padding: 15px;
-        font: status-bar;
+        font: 300px;
         margin: auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
     li {
         list-style: none;
-    }
-    #card1 {
-        border: solid 5px blueviolet;
-        height: 1px;
-        width: 1px;
+        font-size: 20px;
     }
     .headertop {
         margin-top: 10px;
@@ -34,85 +31,92 @@
         border: 8px solid whitesmoke;
         padding: 10px;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
+        font-size: 22px;
+        justify-content: space-between;
     }
     .maininfo {
-        float: left;
         grid-area: maininfo;
         background-color: white;
+        font-size: 22px;
+        display: grid;
+        flex-direction: column;
     }
     h2 {
-        flex-direction: row-reverse;
         justify-content: center;
         font: 72px;
     }
     .sidenote {
         grid-area: sidenote;
-        border: 8px solid whitesmoke;
-        background-image: url("socialMediaWordle.jpeg");
-        float: right;
+        border: 4px solid rgb(33, 112, 215);
+        background: rgb(114, 51, 61);
         padding: 5px;
-        margin: 2px;
-        font-size: 10px;
+        margin-top: 10PX;
+        font-size: 22px;
         font-weight: bolder;
         display: flexbox;
         flex-direction: column;
-        width: fit-content;
-        height: fit-content;
-        margin-left: 188px;
+        width: 50 px;
+        height: 400PX;
         padding: 50px;
+        justify-content: center;
     }
     #SMBCO {
         background-color: whitesmoke;
         border: 2PX dotted rgb(70, 107, 135);
-        font-size: 42px;
+        font-size: 5px;
         justify-content: center;
         width: fit-content;
         margin-left: 80px;
     }
     #bttl {
-        color: rgb(70, 107, 135);
-        background-color: whitesmoke;
+        color: grey;
+        background-color: rgb(33, 112, 215);
         font-size: 22px;
         font-weight: bold;
-    }
-    .footer {
-        grid-area: footer;
-        padding: 10px;
-        border: solid whitesmoke;
-        background-color: rgb(59, 17, 14);
-        height: auto;
-        color: whitesmoke;
-        justify-content: space-between;
+        margin-right: 5px;
     }
     img {
-        border: 7px solid pink;
-        height: 50px;
-        width: 50px;
+        border: 4px solid rgb(114, 51, 61);
+        background-image: url("socialMediaWordle.jpeg");
+        height: 150px;
+        width: 150px;
         padding: 13px;
         margin: 15px;
     }
     #sociImg {
-        border: 2px dotted rgb(70, 107, 135);
-        background-color: whitesmoke;
-        display: flexbox;
-        flex-direction: column-reverse;
-        margin-left: 50px;
+        border: 2px solid rgb(111, 0, 96);
+        display: grid;
+        flex-direction: row;
+        height: 35PX;
+        width: 35px;
+        margin-bottom: 10px;
     }
-    .sidenote2 {
-        background: blue;
+    .CSP {
         grid-area: sidenote;
-        border: 8px solid whitesmoke;
-        float: right;
-        padding: 5px;
-        margin: 2px;
-        font-size: 10px;
-        font-weight: bolder;
+        height: 450PX;
+        width: 650PX;
         display: flexbox;
         flex-direction: column;
-        width: fit-content;
-        height: fit-content;
-        margin-left: 188px;
-        padding: 50px;
+    }
+    .footer {
+        grid-area: footer;
+        font-size: 22px;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        background-color: rgb(33, 112, 215);
+        height: auto;
+        width: auto;
+        color: whitesmoke;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+    #space1 {
+        margin-top: 100px;
+    }
+    #hdp {
+        height: 220px;
+        width: 360px;
     }
 }
