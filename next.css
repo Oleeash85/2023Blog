@@ -1,4 +1,4 @@
-@media screen ( max-width: 901px) and (min-width: 413px) {
+@media screen (max-width: 901px) and (min-width: 413px) {
     head,
     body {
         font-family: 'Caveat', cursive;
@@ -6,9 +6,9 @@
     #bigbox {
         display: grid;
         flex-direction: column-reverse;
-        grid-template-columns: minmax (min-content, 1300PX 4);
+        grid-template-columns: minmax (max-content, max-content 4);
         grid-template-rows: max-content max-content max-content max-content;
-        grid-template-areas: 'headertop headertop headertop headertop ' 'maininfo maininfo maininfo sidenote ' ' maininfo maininfo maininfo sidenote ' 'footer footer footer footer '
+        grid-template-areas: 'headertop headertop headertop headertop ''maininfo maininfo maininfo sidenote '' maininfo maininfo maininfo sidenote ''footer footer footer footer '
     }
     header {
         border: 2px solid navajowhite;
@@ -71,7 +71,8 @@
         margin-left: 80px;
     }
     #bttl {
-        color: rgb(59, 17, 14);
+        border: 2px dotted rgb(160, 18, 97);
+        color: rgb(160, 18, 97);
         background-color: navajowhite;
         font-size: 22px;
         font-weight: bold;
